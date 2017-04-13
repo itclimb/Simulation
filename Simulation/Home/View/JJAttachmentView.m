@@ -61,6 +61,7 @@
 - (void)drawRect:(CGRect)rect{
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:_anchorImgView.center];
+    //创建末端位置
     CGPoint endP = [self convertPoint:_offsetImgView.center fromView:self.boxImgView];
     [path addLineToPoint:endP];
     path.lineWidth = 5;

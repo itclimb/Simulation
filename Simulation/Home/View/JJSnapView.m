@@ -27,6 +27,7 @@
     
     CGPoint loc = [recognizer locationInView:self];
     
+    //添加吸附行为
     UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:self.boxImgView snapToPoint:loc];
     
     snap.damping = 0.5;

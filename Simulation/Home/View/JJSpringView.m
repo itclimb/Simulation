@@ -14,8 +14,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        //频率
         self.attachment.frequency = 0.5;
+        //振幅
         self.attachment.damping = 0.5;
         
         //添加监听

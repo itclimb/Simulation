@@ -19,9 +19,11 @@
         redView.transform = CGAffineTransformMakeRotation(M_PI_2 * 0.5);
         [self addSubview:redView];
         
+        //重力行为
         UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:@[redView,self.boxImgView]];
         [self.animator addBehavior:gravity];
         
+        //边缘检测行为
         UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[redView,self.boxImgView]];
         collision.translatesReferenceBoundsIntoBoundary = YES;
         [self.animator addBehavior:collision];
