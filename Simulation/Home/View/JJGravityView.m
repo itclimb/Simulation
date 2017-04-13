@@ -14,6 +14,11 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        
+        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 300, 80, 20)];
+        lineView.backgroundColor = [UIColor blackColor];
+        [self addSubview:lineView];
+        
         UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
         redView.backgroundColor = [UIColor redColor];
         redView.transform = CGAffineTransformMakeRotation(M_PI_2 * 0.5);
@@ -25,6 +30,10 @@
         
         //边缘检测行为
         UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[redView,self.boxImgView]];
+        CGPoint fromP = CGPointMake(0, 300);
+        CGPoint toP = CGPointMake(80, 300);
+        [collision addBoundaryWithIdentifier:@"line" fromPoint:fromP toPoint:toP];
+        //将参考视图(父视图)设置为边界
         collision.translatesReferenceBoundsIntoBoundary = YES;
         [self.animator addBehavior:collision];
     }
