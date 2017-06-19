@@ -90,7 +90,9 @@
     self.moManager = [[CMMotionManager alloc] init];
     [self.moManager startDeviceMotionUpdatesToQueue:[[NSOperationQueue alloc] init] withHandler:^(CMDeviceMotion * _Nullable motion, NSError * _Nullable error) {
         if (!error) {
-            self.gravity.gravityDirection = CGVectorMake(motion.gravity.x, -motion.gravity.y);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.gravity.gravityDirection = CGVectorMake(motion.gravity.x, -motion.gravity.y);
+            });
         }
     }];
 }
