@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "JJProfileController.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +20,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     ViewController *vc = [[ViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = nav;
+    JJProfileController *profileVc = [[JJProfileController alloc] init];
+    
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc];
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:profileVc];
+    
+    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
+    [tabBarVc addChildViewController:nav1];
+    [tabBarVc addChildViewController:nav2];
+    
+    self.window.rootViewController = tabBarVc;
     [self.window makeKeyAndVisible];
     return YES;
 }

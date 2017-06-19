@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"仿真动画";
+    self.title = @"基础仿真";
     UIView *footerView = [UIView new];
     self.tableView.tableFooterView = footerView;
 }
@@ -36,6 +36,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
+    cell.separatorInset = UIEdgeInsetsZero;
     JJModel *model = self.datas[indexPath.row];
     cell.textLabel.text = model.title;
     return cell;

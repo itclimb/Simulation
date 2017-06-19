@@ -21,6 +21,9 @@
 		3F2892F31E9F1E0900F55556 /* JJPushView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2892F21E9F1E0900F55556 /* JJPushView.m */; };
 		3F2892F61E9F506800F55556 /* JJAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2892F51E9F506700F55556 /* JJAttachmentView.m */; };
 		3F2892F91E9F5A2E00F55556 /* JJSpringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2892F81E9F5A2E00F55556 /* JJSpringView.m */; };
+		3FC1A0BF1EF7A82400BB7B95 /* JJProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1A0BE1EF7A82400BB7B95 /* JJProfileController.m */; };
+		3FC1A0C21EF7CAC400BB7B95 /* JJMarbleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1A0C11EF7CAC400BB7B95 /* JJMarbleController.m */; };
+		3FC1A0C51EF7CC4D00BB7B95 /* JJMarbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1A0C41EF7CC4D00BB7B95 /* JJMarbleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,12 @@
 		3F2892F51E9F506700F55556 /* JJAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJAttachmentView.m; sourceTree = "<group>"; };
 		3F2892F71E9F5A2E00F55556 /* JJSpringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSpringView.h; sourceTree = "<group>"; };
 		3F2892F81E9F5A2E00F55556 /* JJSpringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSpringView.m; sourceTree = "<group>"; };
+		3FC1A0BD1EF7A82400BB7B95 /* JJProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJProfileController.h; sourceTree = "<group>"; };
+		3FC1A0BE1EF7A82400BB7B95 /* JJProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJProfileController.m; sourceTree = "<group>"; };
+		3FC1A0C01EF7CAC400BB7B95 /* JJMarbleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJMarbleController.h; sourceTree = "<group>"; };
+		3FC1A0C11EF7CAC400BB7B95 /* JJMarbleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMarbleController.m; sourceTree = "<group>"; };
+		3FC1A0C31EF7CC4D00BB7B95 /* JJMarbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJMarbleView.h; sourceTree = "<group>"; };
+		3FC1A0C41EF7CC4D00BB7B95 /* JJMarbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMarbleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +93,7 @@
 			children = (
 				3F2892CF1E9E1AE000F55556 /* Delegate */,
 				3F2892C81E9E1ABB00F55556 /* Home */,
+				3FC1A0BC1EF7A74D00BB7B95 /* Profile */,
 				3F2892D01E9E1AFC00F55556 /* Other */,
 				3F2892A91E9E029A00F55556 /* Supporting Files */,
 			);
@@ -93,6 +103,9 @@
 		3F2892A91E9E029A00F55556 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F2892B51E9E029A00F55556 /* Assets.xcassets */,
+				3F2892B71E9E029A00F55556 /* LaunchScreen.storyboard */,
+				3F2892BA1E9E029A00F55556 /* Info.plist */,
 				3F2892AA1E9E029A00F55556 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -124,9 +137,6 @@
 		3F2892D01E9E1AFC00F55556 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3F2892B51E9E029A00F55556 /* Assets.xcassets */,
-				3F2892B71E9E029A00F55556 /* LaunchScreen.storyboard */,
-				3F2892BA1E9E029A00F55556 /* Info.plist */,
 				3F2892C31E9E133400F55556 /* datas.plist */,
 			);
 			name = Other;
@@ -149,6 +159,19 @@
 				3F2892F81E9F5A2E00F55556 /* JJSpringView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3FC1A0BC1EF7A74D00BB7B95 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3FC1A0BD1EF7A82400BB7B95 /* JJProfileController.h */,
+				3FC1A0BE1EF7A82400BB7B95 /* JJProfileController.m */,
+				3FC1A0C01EF7CAC400BB7B95 /* JJMarbleController.h */,
+				3FC1A0C11EF7CAC400BB7B95 /* JJMarbleController.m */,
+				3FC1A0C31EF7CC4D00BB7B95 /* JJMarbleView.h */,
+				3FC1A0C41EF7CC4D00BB7B95 /* JJMarbleView.m */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +200,7 @@
 		3F28929E1E9E029A00F55556 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JJ;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = itclimb.yuancheng.com;
 				TargetAttributes = {
@@ -228,12 +252,15 @@
 				3F2892CE1E9E1ABB00F55556 /* ViewController.m in Sources */,
 				3F2892E71E9F175300F55556 /* JJBaseView.m in Sources */,
 				3F2892F91E9F5A2E00F55556 /* JJSpringView.m in Sources */,
+				3FC1A0BF1EF7A82400BB7B95 /* JJProfileController.m in Sources */,
 				3F2892AE1E9E029A00F55556 /* AppDelegate.m in Sources */,
+				3FC1A0C21EF7CAC400BB7B95 /* JJMarbleController.m in Sources */,
 				3F2892EA1E9F183100F55556 /* JJDemoController.m in Sources */,
 				3F2892AB1E9E029A00F55556 /* main.m in Sources */,
 				3F2892F31E9F1E0900F55556 /* JJPushView.m in Sources */,
 				3F2892ED1E9F18A400F55556 /* JJGravityView.m in Sources */,
 				3F2892CD1E9E1ABB00F55556 /* JJModel.m in Sources */,
+				3FC1A0C51EF7CC4D00BB7B95 /* JJMarbleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
