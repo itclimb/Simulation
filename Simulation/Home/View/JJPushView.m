@@ -32,7 +32,7 @@
         [self addGestureRecognizer:pan];
         
         //推动行为
-        UIPushBehavior *push = [[UIPushBehavior alloc] initWithItems:@[self.boxImgView] mode:UIPushBehaviorModeInstantaneous];
+        UIPushBehavior *push = [[UIPushBehavior alloc] initWithItems:@[self.boxImgView] mode:UIPushBehaviorModeContinuous];
         [self.animator addBehavior:push];
         _push = push;
         

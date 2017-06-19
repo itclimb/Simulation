@@ -22,7 +22,7 @@
         
         //创建刚性附着行为
         //从中心点的偏移量
-        UIOffset offset = UIOffsetMake(20, 20);
+        UIOffset offset = UIOffsetMake(0, 0);
         //附着点的位置
         CGPoint anchorP = CGPointMake(self.boxImgView.center.x, 120);
         UIAttachmentBehavior *attachment = [[UIAttachmentBehavior alloc] initWithItem:self.boxImgView offsetFromCenter:offset attachedToAnchor:anchorP];

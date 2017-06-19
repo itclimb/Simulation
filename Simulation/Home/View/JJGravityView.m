@@ -28,11 +28,12 @@
         UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:@[redView,self.boxImgView]];
         [self.animator addBehavior:gravity];
         
-        //边缘检测行为
-        UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[redView,self.boxImgView]];
-        CGPoint fromP = CGPointMake(0, 300);
-        CGPoint toP = CGPointMake(80, 300);
-        [collision addBoundaryWithIdentifier:@"line" fromPoint:fromP toPoint:toP];
+        //设置边缘检测行为
+        UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[redView,self.boxImgView,lineView]];
+//        //添加一条边界
+//        CGPoint fromP = CGPointMake(0, 300);
+//        CGPoint toP = CGPointMake(80, 300);
+//        [collision addBoundaryWithIdentifier:@"line" fromPoint:fromP toPoint:toP];
         //将参考视图(父视图)设置为边界
         collision.translatesReferenceBoundsIntoBoundary = YES;
         [self.animator addBehavior:collision];

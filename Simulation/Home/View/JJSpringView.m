@@ -17,7 +17,10 @@
         //频率
         self.attachment.frequency = 0.5;
         //振幅
-        self.attachment.damping = 0.5;
+        self.attachment.damping = 0.0;
+        
+        UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:@[self.boxImgView]];
+        [self.animator addBehavior:gravity];
         
         //添加监听
         [self.boxImgView addObserver:self forKeyPath:@"center" options:NSKeyValueObservingOptionNew context:@"spring"];
