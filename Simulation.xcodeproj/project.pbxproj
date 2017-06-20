@@ -24,6 +24,7 @@
 		3FC1A0BF1EF7A82400BB7B95 /* JJProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1A0BE1EF7A82400BB7B95 /* JJProfileController.m */; };
 		3FC1A0C21EF7CAC400BB7B95 /* JJMarbleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1A0C11EF7CAC400BB7B95 /* JJMarbleController.m */; };
 		3FC1A0C51EF7CC4D00BB7B95 /* JJMarbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1A0C41EF7CC4D00BB7B95 /* JJMarbleView.m */; };
+		3FC1A0C81EF8B97500BB7B95 /* JJTestGravityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1A0C71EF8B97500BB7B95 /* JJTestGravityView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		3FC1A0C11EF7CAC400BB7B95 /* JJMarbleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMarbleController.m; sourceTree = "<group>"; };
 		3FC1A0C31EF7CC4D00BB7B95 /* JJMarbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJMarbleView.h; sourceTree = "<group>"; };
 		3FC1A0C41EF7CC4D00BB7B95 /* JJMarbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJMarbleView.m; sourceTree = "<group>"; };
+		3FC1A0C61EF8B97500BB7B95 /* JJTestGravityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTestGravityView.h; sourceTree = "<group>"; };
+		3FC1A0C71EF8B97500BB7B95 /* JJTestGravityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTestGravityView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 				3F2892F51E9F506700F55556 /* JJAttachmentView.m */,
 				3F2892F71E9F5A2E00F55556 /* JJSpringView.h */,
 				3F2892F81E9F5A2E00F55556 /* JJSpringView.m */,
+				3FC1A0C61EF8B97500BB7B95 /* JJTestGravityView.h */,
+				3FC1A0C71EF8B97500BB7B95 /* JJTestGravityView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				3F2892F61E9F506800F55556 /* JJAttachmentView.m in Sources */,
 				3F2892CE1E9E1ABB00F55556 /* ViewController.m in Sources */,
 				3F2892E71E9F175300F55556 /* JJBaseView.m in Sources */,
+				3FC1A0C81EF8B97500BB7B95 /* JJTestGravityView.m in Sources */,
 				3F2892F91E9F5A2E00F55556 /* JJSpringView.m in Sources */,
 				3FC1A0BF1EF7A82400BB7B95 /* JJProfileController.m in Sources */,
 				3F2892AE1E9E029A00F55556 /* AppDelegate.m in Sources */,

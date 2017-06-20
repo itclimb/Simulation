@@ -14,7 +14,7 @@ typedef enum {
     kDemoFuncPush,
     kDemoFuncAttachment,
     kDemoFuncSpring,
-    kDemoFuncCollision
+    kDemoFuncTest
 } kDemoFunc;
 
 @interface JJDemoController : UIViewController

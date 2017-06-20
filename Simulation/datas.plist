@@ -22,5 +22,9 @@
 		<key>title</key>
 		<string>弹性附着</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Test</string>
+	</dict>
 </array>
 </plist>
